@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookpal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/Capture.JPG" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="assets/Cookpal 1.png" alt="logo">
+        <div class="links">
+            <ul>
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Help</li>
+            </ul>
+            <img src="assets/Profile.png" alt="profile" class="profile">
+        </div>
+    </nav>
+
+    <div class="banner">
+        <h3>Trending now</h3>
+        <br>
+        <h1>Mike’s famous salad <br> with cheese</h1><br>
+        <p>By John Mike</p>
+    </div>
+
+    <h3 style="margin: auto; display: flex; padding: 30px;">Search For Recipes</h3>
+
+    <div class="searchBar">
+        <img src="assets/search 1.png" alt="">
+        <input type="text" placeholder="Search for recipes..." id="inputBar">
+        <button id="searchBtn"><img src="assets/li_search (1).png" alt=""></button>
+    </div>
+
+
+    <div id="categories">
+        <button class="categoryBtn allRecipies" id="allRecipies">
+            <div>
+                <h5>All Recipes</h5>
+                <img src="assets/rightArrow.png" alt="">
+            </div>
+        </button>
+        <button class="categoryBtn vegOnly" id="vegOnly">
+            <div>
+                <h5>Veg Recipes Only</h5>
+                <img src="assets/rightArrow.png" alt="">
+            </div>
+        </button>
+        <button class="categoryBtn nonVeg" id="nonVeg">
+            <div>
+                <h5>Non Veg Recipes </h5>
+                <img src="assets/rightArrow.png" alt="">
+            </div>
+        </button>
+    </div>
+
+    <div class="mainContainer">
+        <div class="left">
+            <h4>Filters</h4>
+            <h5>Ratings</h5>
+            <div style="display: flex; flex-direction: column; gap: 5px">
+                <label><input type="checkbox" name="rating" value="above" id="above"> 4 and Above</label>
+                <label><input type="checkbox" name="rating"  value="below" id="below"> Below 4</label>
+
+            </div>
+        </div>
+        <div id="myCont"></div>
+    </div>
+
+    <div class="footer">
+        <div class="info">
+            <img src="assets/Cookpal 1.png" alt="" width="100px">
+            <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+
+        </div>
+        <div class="footerLinks">
+            <table class="linkTable" style="width: 70%; height: 250px; text-align: left;">
+                <tr>
+                    <th>Company</th>
+                    <th>Resourses</th>
+                </tr>
+
+                <tr>
+                    <td class="tableLinks">Home</td>
+                    <td class="tableLinks">Blog</td>
+                </tr>
+
+                <tr>
+                    <td class="tableLinks">Explore</td>
+                    <td class="tableLinks">Use Cases</td>
+                </tr>
+
+                <tr>
+                    <td class="tableLinks">Team</td>
+                    <td class="tableLinks">Testimonials</td>
+                </tr>
+
+                <tr>
+                    <td class="tableLinks">About Us</td>
+                    <td class="tableLinks">Insights</td>
+                </tr>
+
+                <tr>
+                    <td class="tableLinks">Activity</td>
+                </tr>
+            </table>
+        </div>
+        <div class="emailUs">
+            <img src="assets/Cookpal 1.png" alt="" width="100px">
+            <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+            <div class="sub">
+                <input type="email" name="email" id="email" placeholder="youremail@gmail.com">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    background-color: white;
+    top: 0px;
+    position: sticky;
+}
+nav, .links{
+    display: flex;
+    padding: 25px;
+    height: 40px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>img, .links>img{
+    height: 30px;
+}
+.links{
+    width: 30%;
+}
+.links>ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.links>ul>li{
+    list-style: none;
+    font-size: 16px;
+}
+.links>ul>li:hover, .tableLinks:hover{
+    color: #509e2f;
+}
+
+
+.banner{
+    margin: auto;
+    height: auto;
+    width: 97%;
+    background: url(assets/Rectangle\ 20.png);
+    background-size: cover;
+    padding: 70px;
+}
+.banner>h3{
+    color: #ca5126;
+}
+.banner>h1, .banner>p{
+    color: white;
+}
+
+
+
+.searchBar{
+    width: 90%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+.searchBar>img{
+    width: 20px;
+    height: 20px;
+}
+.searchBar>input{
+    width: 100%;
+    margin-left: 8px;
+    height: 30px;
+    border: none;
+    background-color: #f3f3f3;
+}
+.searchBar>button{
+    border: none;
+    background-color: #509e2f;
+    width: 30px;
+    height: 30px;
+}
+
+
+#categories{
+    margin-left: 20px;
+}
+.categoryBtn{
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+}
+.categoryBtn>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.allRecipies{
+    background-color: #eaaa00;
+}
+.vegOnly{
+    background-color: #c4d600;
+}
+.nonVeg{
+    background-color: #dc582a;
+}
+
+
+
+.mainContainer{
+    width: 100%;
+    margin-left: 20px;
+    height: auto;
+    padding: 25px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainContainer > .left{
+    min-width: 15%;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+#myCont{
+    min-width: 85%;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .card{
+    padding: 5px;
+    width: 200px;
+    height: 220px;
+    gap : 5px;
+    border: 1px solid #f6f6f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card>img{
+    width: 150px;
+    height: 130px;
+    border-radius: 10px;
+  }
+
+  .card:hover{
+    box-shadow: 0px 0px 5px #509e2f;
+  }
+
+
+.footer{
+    display: flex;
+    padding: 20px;
+    color: #666666;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.footer>.info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+.footer > .footerLinks{
+    width: 40%;
+}
+.footer> .emailUs{
+    width: 40%;
+}
+
+
+
+.emailUs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+.sub > input{
+    width: 50%;
+    height: 30px;
+    border-radius: 3px;
+    padding: 4px;
+    border: none;
+    box-shadow: 0px 0px 2px gray;
+}
+.sub>button{
+    height: 30px;
+    background-color: #509e2f;
+    border-radius: 3px;
+    padding: 3px;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .links{
+        width: 50%;
+    }
+}
+@media (max-width: 570px) {
+    .links{
+        display: none;
+    }
+    .mainContainer, .mainContainer>.left, .footer{
+        margin-left: 20px;
+        flex-direction: column;
+    }
+    #myCont, #myCont>.card{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .mainContainer>.left>div{
+        flex-direction: row !important;
+    }
+    .footer{
+        margin-left: 30px;
+        justify-content: center;
+        align-items: start;
+    }
+    .footer>.info, .footer>.emailUs{
+        width: 100%;
+    }
+}
